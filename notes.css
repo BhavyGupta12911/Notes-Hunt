@@ -1,0 +1,99 @@
+*{
+    margin: 0;padding: 0;
+    font-family: sans-serif;
+    
+}
+
+nav{
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+}
+
+.ank{
+    text-decoration: none;
+    color: white;
+    list-style: none;
+}
+
+.nav_tab a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+
+.back_image{
+    background-image: url(https://media-public.canva.com/3MKIU/MAEecG3MKIU/1/s2.jpg);
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    /* filter: brightness(0.8); */
+    /* object-fit: cover; */
+}
+
+.branch_heading{
+    color: white;
+    font-size: xxx-large;
+    font-weight: 900;
+    display: flex;
+    justify-content: center;
+    /* margin: 2em; */
+}
+
+#btnfstyr{
+    font-size: x-large; padding: 0.5em 2em; color: red; font-weight: 900; background-color: #0d0e0eba;
+}
+
+.branchbtn{
+    
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    align-items: center;
+    height: 60vh;
+    /* border-image: 2em; */
+    
+}
+
+#branchbtn{
+    margin-bottom: 3em;
+    color: white;
+    text-decoration: none;
+}
+
+/* #branchbtn:hover{
+    color: black;
+} */
+ 
+
+@media screen and (max-width:600px) {
+    .branch_heading{
+        margin-left: 1em;
+    }
+
+    #branchbtn{
+        margin-left: 2em;
+        width: 80vw;
+    }
+
+    .back_image{
+        height: auto;
+    }
+
+    #btnfstyr{
+        font-size: larger;
+    }
+
+    .branchbtn{
+        flex-direction: column;
+        height: auto;
+    }
+
+    
+}
+

@@ -1,0 +1,64 @@
+nav{
+    top: 0%;
+}
+
+.aboutdetail{
+    margin: 1em 2em ;
+    color: #f2074f;
+    margin-top: 15vh;
+}
+
+.personalcard{
+    display: flex;
+    /* background-color: rgba(0, 0, 0, 0.214); */
+    /* color: white; */
+    margin: 1em;
+    border-radius: 1em;
+
+}
+
+.photo{
+    height: 55vh;
+    width: 30vw;
+    margin: 1em;
+}
+
+.personaldetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* height: 70vh; */
+}
+
+.name{
+    font-size: xxx-large;
+}
+
+.detail{
+    font-size: x-large;
+    margin: 1em;
+}
+
+@media screen and (max-width:600px) {
+    .personalcard{
+        flex-direction: column;
+    }
+
+    .photo{
+        height: auto;
+        width: 80vw;
+    }
+
+    .name{
+        font-size: xx-large;
+    }
+
+    .detail{
+        font-size: larger;
+    }
+
+    .aboutdetail{
+        font-size: x-large;
+    }
+}

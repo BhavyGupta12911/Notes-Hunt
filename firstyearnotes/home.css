@@ -1,0 +1,303 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
+nav{
+    height: 10vh;
+    width: 100vw;
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    position: fixed;
+}
+
+.logo{
+    font-size: xx-large;
+    font-weight: bold;
+
+}
+
+nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav_tab{
+    margin: 0vw 3vw;
+    list-style: none;
+    font-size: x-large;
+    color: white;
+    font-style: none;
+}
+
+a{
+    color: white;
+    list-style: none;
+    text-decoration: none;
+}
+
+a:hover{
+    background-color: rgba(109, 106, 106, 0.849);
+    cursor: pointer;
+}
+
+
+.container{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: row;
+    
+}
+
+.left{
+    width: 50%;
+    height: auto;
+}
+
+.heading{
+    padding:  2em 2em 0em 2em;
+    font-size: xxx-large;
+    font-weight: 900;
+}
+
+.subheading{
+    padding:1em 2em;
+    font-size: x-large;
+}
+
+.btn1{
+    background-color: rgb(84, 125, 247);
+    color: white;
+    padding: 1em 1em;
+    font-size: x-large;
+    border-radius: 15px;
+    position: relative;
+    left: 15vw;
+}
+
+.right{
+    width: 50%;height: auto;
+    /* height: 100vh; */
+}
+
+.img_right{
+    /* height: 100vh; */
+    width: 100%;
+    object-fit: cover;
+
+}
+
+/* ------------------------------------------------------------------------------------ */
+
+
+
+.provides{
+    height: auto;
+    width: 100vw;
+    background-image: url(image_secpage.jpeg);
+    background-size: cover;
+
+}
+
+.provide_items{
+    display: flex;
+    /* justify-content: center; */
+    flex-direction: column;
+    align-items: center;
+    
+}
+
+/* -------------------------------------------------------------------------------------------------------- */
+/* our services page */
+.services{
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQj2YVbHq2kdThmyc_UHQdpUXeTfQH-vXm_Kw&s);
+    height: auto;
+    width: 100vw;
+    background-size: cover;
+    background-attachment:scroll;
+    /* display: flex; */
+
+}
+
+/* import css text start */
+.animate-charcter
+{
+   text-transform: uppercase;
+  background-image: linear-gradient(
+    -225deg,
+    #231557 0%,
+    #44107a 29%,
+    #ff1361 67%,
+    #fff800 100%
+  );
+  background-size: auto auto;
+  background-clip: border-box;
+  background-size: 200% auto;
+  color: #fff;
+  background-clip: text;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  animation: textclip 2s linear infinite;
+  display: inline-block;
+      font-size: 100px;
+}
+
+@keyframes textclip {
+  to {
+    background-position: 200% center;
+  }
+}
+
+/* import css tect end */
+
+.cards{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+.card{
+    height: auto;
+    width: 30vw;
+    background-color: rgba(36, 35, 35, 0.451);
+    margin: 1em;
+    color: white;
+}
+
+.icons{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: xx-large;
+    background-size: cover;
+}
+
+.icons_heading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    font-size: x-large;
+
+}
+
+.icons_subheading{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:0em 2em 2em 2em;
+    font-size: large;
+
+
+}
+
+/* ------------------------------------------------------------------------------- */
+Footer{
+    background-color: rgb(0, 0, 0);
+    color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 1em 5em;
+}
+
+.smplateform{
+    display: flex;
+    justify-content: space-between;
+    list-style: none;
+    text-decoration: none;
+    color: rgba(245, 242, 242, 0.703);
+}
+
+/* navbar responsive */
+nav .menu-btn i{
+    color: white;
+    cursor: pointer;
+    display: none;
+}
+
+#click{
+    display: none;
+}
+
+#click:checked ~.menu-btn i::before{
+    content: "\f00d";
+}
+
+
+@media screen and (max-width:600px) {
+    .container{
+        flex-direction: column-reverse;
+    }
+
+    .right{
+        width: auto;
+    }
+
+    .left{
+        width: auto;
+    }
+
+    .heading{
+        font-size: xx-large;
+        margin: 0em 2em;
+        margin-top: -2em;
+        padding: 0em;
+    }
+
+    .animate-charcter{
+        font-size: xxx-large;
+    }
+
+    .provides{
+        background-size: contain;
+    }
+
+    .cards{
+        flex-direction: column;
+    }
+
+    .card{
+        width: auto;
+    }
+
+    Footer{
+        padding: 1em 2em;
+    }
+
+    .services{
+        background-color: #505152;
+        background-image: none;
+    }
+
+    /* navbar responsive */
+    nav ul{
+        position: fixed;
+        top : -100vh;
+        left: 0;
+        height: 60vh;
+        width: 100vw;
+        background-color: black;
+        flex-direction: column;
+        /* align-items: center; */
+        justify-content: space-evenly;
+        transition: all 0.4s ease;
+
+    }
+
+    #click:checked ~ ul{
+        top : 10vh
+    }
+
+    nav .menu-btn i{
+        display: block;
+    }
+
+}
