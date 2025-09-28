@@ -168,6 +168,10 @@ a:hover{
     background-color: rgba(36, 35, 35, 0.451);
     margin: 1em;
     color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
 }
 
 .icons{
